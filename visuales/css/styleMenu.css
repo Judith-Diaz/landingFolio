@@ -1,0 +1,32 @@
+.navbar {
+    background: #35424a; /* Mismo color que el header */
+    padding: 1rem 0;
+    position: sticky; /* Menú pegajoso (opcional) */
+    top: 0;
+    z-index: 100; /* Para que quede por encima del contenido */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: #e8491d; /* Color de hover */
+}
