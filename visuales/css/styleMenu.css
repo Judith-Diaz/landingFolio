@@ -1,5 +1,5 @@
 .navbar {
-    background: #35424a; /* Mismo color que el header */
+    background: #160314; /* Mismo color que el header */
     padding: 1rem 0;
     position: sticky; /* Menú pegajoso (opcional) */
     top: 0;
@@ -19,14 +19,17 @@
 }
 
 .menu a {
-    color: white;
+    color: rgb(236, 228, 236);
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: background 0.3s;
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 .menu a:hover {
-    background: #e8491d; /* Color de hover */
+  background: radial-gradient(circle, rgba(255, 182, 193, 0.2) 0%, rgba(255, 182, 193, 0) 80%);
+  box-shadow: 0 0 20px 10px rgba(255, 182, 193, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
