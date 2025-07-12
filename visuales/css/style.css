@@ -1,18 +1,64 @@
-
-        /* Estilos generales */
+  /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #2b2227;
+            background-color: #161214;
+            
         }
         
-        h2 {
+        .section {
+  max-width: 600px;
+  padding: 20px;
+  background:#292426;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(190, 161, 161, 0.1);
+  text-align: center; /* centra el texto dentro */
+  color: #ebdde4;
+}
+        h4 {
             text-align: center;
             color: #35424a;
             margin-bottom: 30px;
         }
         
+        h1 {
+  margin-bottom: 15px;
+  color: #eee4ed;
+}
+  h2 {
+  margin-bottom: 15px;
+  color: #eee4ed;
+}
+      .section h1 {
+  margin-bottom: 15px;
+  color: #eee4ed;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.centrado-main{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+  text-align: center;
+    padding: 70px;
+
+}
+.contenedor-principal
+{
+  max-width:70%;
+  padding: 50px;
+  background:#292426;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(190, 161, 161, 0.1);
+  text-align: center; /* centra el texto dentro */
+  color: #ebdde4;
+  margin: 70px;
+
+}
         /* Contenedor principal del carrusel */
         .carousel-container {
             width: 90%;

@@ -1,33 +1,38 @@
-.navbar {
-    background: #160314; /* Mismo color que el header */
-    padding: 1rem 0;
-    position: sticky; /* Menú pegajoso (opcional) */
-    top: 0;
-    z-index: 100; /* Para que quede por encima del contenido */
+.navbarra, .navbarra {
+  display: flex;
+  align-items: center;
+  padding: 1rem 20px;
+  background: #160314;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
+
+
+.sidebar-header h2 {
+  color: white;
+  margin-left: 80px;
+  
+  }
 
 .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: auto; /* esto empuja el menú a la derecha */
+  padding: 0;
 }
 
-.menu li {
-    margin: 0 1rem;
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-.menu a {
-    color: rgb(236, 228, 236);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background 0.3s ease, backdrop-filter 0.3s ease;
-}
-
-.menu a:hover {
+.menu li a:hover {
   background: radial-gradient(circle, rgba(255, 182, 193, 0.2) 0%, rgba(255, 182, 193, 0) 80%);
   box-shadow: 0 0 20px 10px rgba(255, 182, 193, 0.2);
   border-radius: 10px;
