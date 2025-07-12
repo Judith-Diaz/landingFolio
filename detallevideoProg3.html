@@ -3,37 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="visuales/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <h2>Galeria de imagenes</h2>
-    <div class="carousel">
-    <div class="carousel-inner">
-        <!-- Imágenes del carrusel -->
-        <input type="radio" name="slides" id="slide-1" checked>
-        <input type="radio" name="slides" id="slide-2">
-        <input type="radio" name="slides" id="slide-3">
-        
-        <div class="slides">
-            <div class="slide" id="slide-1">
-                <img src="ruta/a/imagen1.jpg" alt="Proyecto Java">
+
+        <div class="carousel-container">
+            <!-- Inputs radio para controlar las slides -->
+            <input type="radio" name="slides" id="slide-1" checked>
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <input type="radio" name="slides" id="slide-7">
+            <input type="radio" name="slides" id="slide-8">
+            
+            <!-- Contenedor de todas las slides -->
+            <div class="carousel-slides">
+                <!-- Cada slide con su imagen -->
+                <div class="slide" id="slide-1">
+                    <img src="visuales/imagenes/Captura de pantalla (667).png" alt="Proyecto Java">
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="visuales/imagenes/Captura de pantalla (668).png" alt="Proyecto Python">
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="visuales/imagenes/Captura de pantalla (669).png" alt="Proyecto Web">
+                </div>
+                <div class="slide" id="slide-4">
+                    <img src="visuales/imagenes/Captura de pantalla (670).png" alt="Proyecto Web">
+                </div>
+                <div class="slide" id="slide-5">
+                    <img src="visuales/imagenes/Captura de pantalla (671).png" alt="Proyecto Web">
+                </div>
+                <div class="slide" id="slide-6">
+                    <img src="visuales/imagenes/Captura de pantalla (672).png" alt="Proyecto Web">
+                </div>
+                <div class="slide" id="slide-7">
+                    <img src="visuales/imagenes/Captura de pantalla (673).png" alt="Proyecto Web">
+                </div>
+                <div class="slide" id="slide-8">
+                    <img src="visuales/imagenes/Captura de pantalla (677).png" alt="Proyecto Web">
+                </div>
             </div>
-            <div class="slide" id="slide-2">
-                <img src="ruta/a/imagen2.jpg" alt="Proyecto Python">
-            </div>
-            <div class="slide" id="slide-3">
-                <img src="ruta/a/imagen3.jpg" alt="Proyecto Web">
+            
+            <!-- Controles de navegación (puntos) -->
+            <div class="carousel-controls">
+                <label for="slide-1"></label>
+                <label for="slide-2"></label>
+                <label for="slide-3"></label>
+                <label for="slide-4"></label>
+                <label for="slide-5"></label>
+                <label for="slide-6"></label>
+                <label for="slide-7"></label>
+                <label for="slide-8"></label>
             </div>
         </div>
-        
-        <!-- Controles (puntos para navegar) -->
-        <div class="carousel-controls">
-            <label for="slide-1"></label>
-            <label for="slide-2"></label>
-            <label for="slide-3"></label>
-        </div>
-    </div>
-</div>
+<h2>Descripcion del proyecto</h2>
+<p> Características del Sistema:
+ ✔️ Administración de médicos, pacientes y gestión de turnos.
+ ✔️ Gestión de usuarios con roles: Administrador y Médico.
+ ✔️ ABML (Alta, Baja, Modificación, Listado) para pacientes, médicos y turnos.
+ ✔️ Visualización de turnos específicos para cada médico, con opción de agregar observaciones y marcar asistencia del paciente.
+📌 Tecnologías Utilizadas:
+ ✔️ Backend: C#, .NET, ASP.NET.
+ ✔️ Frontend: HTML, CSS.
+ ✔️ Base de Datos: SQL Server.</p>
     <iframe 
             src="https://www.youtube.com/embed/fAue8RZ3bSM" 
             title="Demo Sistema Bancario Java" 

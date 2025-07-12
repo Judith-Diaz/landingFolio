@@ -1,54 +1,154 @@
-.carousel {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-}
 
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #35424a;
+            margin-bottom: 30px;
+        }
+        
+        /* Contenedor principal del carrusel */
+        .carousel-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* Contenedor de slides */
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 400px; /* Altura fija para el contenedor */
+        }
+        
+        /* Cada slide individual */
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .slide img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        /* Controles de navegación (puntos) */
+        .carousel-controls {
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .carousel-controls label {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #ccc;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        /* Oculta los radio buttons */
+        input[type="radio"] {
+            display: none;
+        }
+        
+        /* Mueve las slides según el radio button seleccionado */
+        #slide-1:checked ~ .carousel-slides {
+            transform: translateX(0%);
+        }
+        #slide-2:checked ~ .carousel-slides {
+            transform: translateX(-100%);
+        }
+        #slide-3:checked ~ .carousel-slides {
+            transform: translateX(-200%);
+        }
+        #slide-4:checked ~ .carousel-slides {
+            transform: translateX(-300%);
+        }
+        #slide-5:checked ~ .carousel-slides {
+            transform: translateX(-400%);
+        }
+        #slide-6:checked ~ .carousel-slides {
+            transform: translateX(-500%);
+        }
+        #slide-7:checked ~ .carousel-slides {
+            transform: translateX(-600%);
+        }
+        #slide-8:checked ~ .carousel-slides {
+            transform: translateX(-700%);
+        }
+        
+        /* Cambia el color del punto activo */
+        #slide-1:checked ~ .carousel-controls label:nth-child(1),
+        #slide-2:checked ~ .carousel-controls label:nth-child(2),
+        #slide-3:checked ~ .carousel-controls label:nth-child(3),
+        #slide-4:checked ~ .carousel-controls label:nth-child(4),
+        #slide-5:checked ~ .carousel-controls label:nth-child(5),
+        #slide-6:checked ~ .carousel-controls label:nth-child(6),
+        #slide-7:checked ~ .carousel-controls label:nth-child(7),
+        #slide-8:checked ~ .carousel-controls label:nth-child(8) {
+            background: #e8491d;
+        }
 
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.slide img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-controls {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.carousel-controls label {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-/* Oculta los inputs radio */
-input[type="radio"] {
-    display: none;
-}
-
-/* Muestra la slide seleccionada */
-#slide-1:checked ~ .slides { transform: translateX(0%); }
-#slide-2:checked ~ .slides { transform: translateX(-100%); }
-#slide-3:checked ~ .slides { transform: translateX(-200%); }
-
-/* Cambia color del punto activo */
-#slide-1:checked ~ .carousel-controls label:nth-child(1),
-#slide-2:checked ~ .carousel-controls label:nth-child(2),
-#slide-3:checked ~ .carousel-controls label:nth-child(3) {
-    background: #35424a;
-}
+        /* Estilos para el video */
+        iframe {
+            display: block;
+            width: 90%;
+            max-width: 800px;
+            height: 450px;
+            margin: 30px auto;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Estilos para el botón */
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 12px 20px;
+            background: #35424a;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #e8491d;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            iframe {
+                height: 250px;
+            }
+            
+            .carousel-container {
+                width: 95%;
+            }
+            
+            .carousel-slides {
+                height: 250px;
+            }
+        }
