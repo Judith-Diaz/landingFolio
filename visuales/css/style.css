@@ -66,6 +66,8 @@ text-shadow: 2px 2px 8px rgba(226, 17, 226, 1);
 .section p {
   font-size: 1.1rem;
   line-height: 1.5;
+  padding: 15px 25px;
+  margin-bottom: 20px;
 }
 
 /*
@@ -333,4 +335,6 @@ text-shadow: 2px 2px 8px rgba(226, 17, 226, 1);
 color: #fff;
 text-align:justify;
  margin: 0;
+ padding: 15px 25px;
+  margin-bottom: 20px;
 }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="visuales/css/style.css">
+    <title>proyecto Banco</title>
+</head>
+<body>
+    <div id="menu-container"></div>
+    <main>
+
+
+    <div class="tutulos-txtCentradoenVer">
+    <h2>Galeria de imagenes</h2>
+
+        <div class="carousel-container">
+            <!-- Inputs radio para controlar las slides -->
+            <input type="radio" name="slides" id="slide-1" checked>
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <input type="radio" name="slides" id="slide-7">
+            <input type="radio" name="slides" id="slide-8">
+            
+            <!-- Contenedor de todas las slides -->
+            <div class="carousel-slides">
+                <!-- Cada slide con su imagen -->
+                <div class="slide" id="slide-1">
+                    <img src="visuales/imagenes/Captura de pantalla (683).png" alt="Proyecto Java">
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="visuales/imagenes/Captura de pantalla (682).png" alt="Proyecto Python">
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="visuales/imagenes/Captura de pantalla (684).png" alt="Proyecto Web">
+                </div>
+                <div class="slide" id="slide-4">
+                    <img src="visuales/imagenes/Captura de pantalla (686).png" alt="Proyecto Web">
+                </div>
+                <div class="slide" id="slide-5">
+                    <img src="visuales/imagenes/Captura de pantalla (688).png" alt="Proyecto Web">
+                </div>
+                <div class="slide" id="slide-6">
+                    <img src="visuales/imagenes/Captura de pantalla (689).png" alt="Proyecto Web">
+                </div>
+                <div class="slide" id="slide-7">
+                    <img src="visuales/imagenes/Captura de pantalla (691).png" alt="Proyecto Web">
+                </div>
+                <div class="slide" id="slide-8">
+                    <img src="visuales/imagenes/Captura de pantalla (690).png" alt="Proyecto Web">
+                </div>
+            </div>
+            
+            <!-- Controles de navegación (puntos) -->
+            <div class="carousel-controls">
+                <label for="slide-1"></label>
+                <label for="slide-2"></label>
+                <label for="slide-3"></label>
+                <label for="slide-4"></label>
+                <label for="slide-5"></label>
+                <label for="slide-6"></label>
+                <label for="slide-7"></label>
+                <label for="slide-8"></label>
+            </div>
+        </div>
+<h2>Descripcion del proyecto</h2>
+<p> 
+Se trata de un sistema web para la gestión de un banco, con funcionalidades diferenciadas para dos tipos de usuarios: administrador y cliente.
+
+El administrador tiene la capacidad de realizar operaciones de ABML (Alta, Baja, Modificación y Listado) sobre clientes y cuentas, autorizar o rechazar solicitudes de préstamos, y visualizar reportes estadísticos. Cada cliente puede tener hasta tres cuentas, con un saldo inicial asignado automáticamente. Además, puede gestionar los préstamos aprobados, incluyendo el control de cuotas.
+
+El cliente puede acceder a sus datos personales, visualizar el historial de movimientos de sus cuentas, realizar transferencias (entre sus propias cuentas o a cuentas de otros clientes mediante CBU), solicitar préstamos y pagar sus cuotas desde su cuenta asociada. El sistema registra cada pago de cuota con su fecha correspondiente.
+
+El diseño contempla distintas reglas de negocio como el límite de cuentas por cliente, imposibilidad de dejar cuentas con saldo negativo, y validaciones sobre disponibilidad de saldo para transferencias.
+
+
+<h2>Tecnologías Utilizadas</h2> 
+<p>  Backend: java</p>
+<p>Frontend: jsp, CSS.</p>  
+<p>Base de Datos: MySql.</p>
+    <iframe 
+            src="https://www.youtube.com/embed/cajl7ApHMcg" 
+            title="Demo Sistema Bancario Java" 
+            allowfullscreen>
+        </iframe>
+        <a href="https://github.com/Judith-Diaz/TPINT_Grupo_15" class="btn">Ver código en GitHub</a>
+</div>
+</main>
+
+<script src="menu.js"></script>
+</body>
+</html>
