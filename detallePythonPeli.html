@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="visuales/css/style.css">
+    <title>proyecto peliculas</title>
+</head>
+<body>
+    <div id="menu-container"></div>
+    <main>
+
+
+    <div class="tutulos-txtCentradoenVer">
+    <h2>Galeria de imagenes</h2>
+
+        <div class="carousel-container">
+            <!-- Inputs radio para controlar las slides -->
+            <input type="radio" name="slides" id="slide-1" checked>
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+          
+            
+            <!-- Contenedor de todas las slides -->
+            <div class="carousel-slides">
+                <!-- Cada slide con su imagen -->
+                <div class="slide" id="slide-1">
+                    <img src="visuales/imagenes/Captura de pantalla (678).png" alt="Proyecto Java">
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="visuales/imagenes/Captura de pantalla (679).png" alt="Proyecto Python">
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="visuales/imagenes/Captura de pantalla (681).png" alt="Proyecto Web">
+                </div>
+              
+            </div>
+            
+            <!-- Controles de navegación (puntos) -->
+            <div class="carousel-controls">
+                <label for="slide-1"></label>
+                <label for="slide-2"></label>
+                <label for="slide-3"></label>
+               
+            </div>
+        </div>
+<h2>Descripcion del proyecto</h2>
+<p> 
+Bienvenido a la aplicación de gestión de películas,con ella podras añadir, modificar, eliminar y listar películas.
+
+Desarrolle una aplicación de gestión de películas en Python utilizando Tkinter para la interfaz gráfica
+ y SQLite como base de datos. Esta aplicación permite realizar operaciones de ABML (Alta, Baja, Modificación y Listar) de películas,
+  manejando información como nombre, duración, género, clasificación y calificación. La tabla principal muestra los registros de las películas
+   cargadas , input, y botones que nos permiten realizar ABML
+<h2>Tecnologías Utilizadas</h2> 
+<p>  Backend: Python. </p>
+<p>Visual: Tkinter.</p>  
+<p>Base de Datos: Sqlite3.</p>
+    <iframe 
+            src="https://www.youtube.com/embed/rV_gl4sN6oo" 
+            title="Demo Sistema Bancario Java" 
+            allowfullscreen>
+        </iframe>
+        <a href="https://github.com/Benja-099/Curso3FebreroTP" class="btn">Ver código en GitHub</a>
+</div>
+</main>
+
+<script src="menu.js"></script>
+</body>
+</html>
