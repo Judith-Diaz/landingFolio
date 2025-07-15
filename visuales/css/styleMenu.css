@@ -1,4 +1,5 @@
-.navbarra, .navbarra {
+.navbarra,
+.navbarra {
   display: flex;
   align-items: center;
   padding: 1rem 20px;
@@ -12,14 +13,15 @@
 .sidebar-header h2 {
   color: white;
   margin-left: 80px;
-  
-  }
+
+}
 
 .menu {
   list-style: none;
   display: flex;
   gap: 20px;
-  margin-left: auto; /* esto empuja el menú a la derecha */
+  margin-left: auto;
+  /* esto empuja el menú a la derecha */
   padding: 0;
 }
 

@@ -4,17 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="visuales/css/style.css">
-    <title>Document</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>contactos</title>
 </head>
 <body>
 
   <div id="menu-container"></div>
 
  <main class="main-content" >
-       <section id="contactos" class="section">
-        <h1>contactos</h1>
-    </section>
+
+ <section id="contactos" class="sectionn">
+  <h1>Contacto</h1>
+  <p>¿Querés ponerte en contacto conmigo? Podés escribirme por correo o seguirme en redes sociales.</p>
+<div class="proyecto-card-3">
+  <form  id="form-contacto" action="https://formspree.io/f/xvgqpedy" method="POST" >
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu email" required>
+    <textarea name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
+    <button type="submit">Enviar</button>
+    <p id="msg-exito" style="display:none; color: #e92adf; margin-top: 10px;">📩 ¡Mensaje enviado con éxito!</p>
+  </form>
+
+
+      <div class="iconos"> 
+        
+        <a href="https://www.linkedin.com/in/judith-diaz-872b9a234/" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+     <a href="https://github.com/Judith-Diaz" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+</div>
+
+   </div>
+
+</section>
     </main>
     <script src="menu.js"></script>
+    <script>
+  const form = document.getElementById('form-contacto');
+  const mensaje = document.getElementById('msg-exito');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault(); // Evita redirección
+
+    const datos = new FormData(form);
+
+    const respuesta = await fetch(form.action, {
+      method: form.method,
+      body: datos,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (respuesta.ok) {
+      form.reset(); // Limpia el formulario
+      mensaje.style.display = 'block'; // Muestra mensaje de éxito
+    } else {
+      alert('❌ Ocurrió un error. Intentalo de nuevo más tarde.');
+    }
+  });
+</script>
 </body>
 </html>
