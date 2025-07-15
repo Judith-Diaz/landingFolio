@@ -8,7 +8,8 @@
         }
         
         .section {
-  max-width: 600px;
+  max-width: 1200px;
+    margin: 0 auto;
   padding: 20px;
   background:#292426;
   border-radius: 10px;
@@ -20,7 +21,7 @@ button{
   display: inline-block;
   padding: 12px 20px;
   background: #d765ee;
-  color: white;
+  color: rgb(18, 18, 19);
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
@@ -48,10 +49,14 @@ button{
         h1 {
   margin-bottom: 15px;
   color: #eee4ed;
+text-shadow: 2px 2px 8px rgba(226, 17, 226, 1);
+
+
 }
   h2 {
   margin-bottom: 15px;
   color: #eee4ed;
+  text-shadow: 2px 2px 8px rgba(226, 17, 226, 1);
 }
       .section h1 {
   margin-bottom: 15px;
@@ -62,6 +67,8 @@ button{
   font-size: 1.1rem;
   line-height: 1.5;
 }
+
+/*
 .centrado-main{
  display: flex;
     justify-content: center;
@@ -74,18 +81,19 @@ button{
 {
   max-width:70%;
   padding: 50px;
-  background:#292426;
+  background:#b81455;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(190, 161, 161, 0.1);
-  text-align: center; /* centra el texto dentro */
+  text-align: center; 
   color: #ebdde4;
   margin: 70px;
 
 }
+*/
         /* Contenedor principal del carrusel */
         .carousel-container {
-            width: 90%;
-            max-width: 800px;
+            width: 80%;
+            max-width: 600px;
             margin: 0 auto;
             overflow: hidden;
             position: relative;
@@ -173,7 +181,7 @@ button{
         #slide-6:checked ~ .carousel-controls label:nth-child(6),
         #slide-7:checked ~ .carousel-controls label:nth-child(7),
         #slide-8:checked ~ .carousel-controls label:nth-child(8) {
-            background: #e8491d;
+            background: #e02a8e;
         }
 
         /* Estilos para el video */
@@ -240,5 +248,89 @@ button{
   border-radius: 30px ;
   box-shadow: 0 0 10px rgba(247, 54, 198, 0.5);
   text-align: left;
-  border-color: #cc33eb;
+  text-shadow: 2px 2px 8px rgba(226, 17, 226, 1);
+}
+.proyecto-card-2{
+ background-color: #292426;
+  color: white;
+  width: auto;
+  padding: 20px;
+  border-radius: 30px ;
+  box-shadow: 0 0 10px rgba(247, 54, 198, 0.5);
+  text-align: left;
+  text-shadow: 2px 2px 8px rgba(226, 17, 226, 1);
+
+}
+.proyecto-card-3 {
+  background-color: #292426;
+ 
+  margin: 100px auto 0 auto;   /* bajé de 200 a 100px */
+  color: white;
+  max-width: 600px;
+  padding: 30px 20px;    /* menos padding */
+  border-radius: 15px;   /* menos redondeo */
+  box-shadow: 0 0 10px rgba(247, 54, 198, 0.5);
+  /* Para centrar el texto horizontalmente */
+  text-align: center;
+  align-items: center;  /* centra contenido interno */
+  /* Si querés centrar verticalmente en algún contenedor padre, hacelo ahí */
+}
+
+.proyecto-card-3 h1,
+.proyecto-card-3 h2 {
+  margin: 10px 0;
+  /* Quité el text-shadow para algo más suave */
+}
+
+.proyecto-card-3 .btn {
+  display: inline-block;   /* para que respete el tamaño del contenido */
+  margin: 20px auto;       /* centrado horizontal */
+  padding: 10px 20px;
+  background-color: #d765ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.proyecto-card-3 .btn:hover {
+  background-color: #b14cc9;
+}
+
+.proyecto-card-3 .iconos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.proyecto-card-3 .iconos a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.proyecto-card-3 .iconos a:hover {
+  color: #d765ee;
+}
+
+.tutulos-txtCentradoenVer{
+
+
+     max-width: 1000px;           /* Limita el ancho máximo del contenido */
+  margin: 0 auto;             /* Centra horizontalmente el contenedor */
+  padding: 0 20px;            /* Espacio a los costados en pantallas chicas */
+  text-align: center;
+}
+
+.tutulos-txtCentradoenVer p {
+ font-size: 1.1rem;
+  line-height: 1.6;
+color: #fff;
+text-align:justify;
+ margin: 0;
 }
